@@ -12,6 +12,10 @@ body {
     background-attachment: fixed;
     color: white;
     line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header & Nav */
@@ -61,7 +65,7 @@ header {
 
 /* Main Content */
 main {
-    min-height: 70vh;
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +86,6 @@ footer {
     color: white;
     padding: 30px 20px;
     text-align: center;
-    margin: auto;
 }
 
 .footer-links {
