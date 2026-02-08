@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="logo"><a href="#">saronic</a></div>
+        <nav>
+          <ul>
+            <li><a href="https://cdpn.io/ARON-JOHN-SALEN/fullpage/XJKVONj?nocache=true&view=#">Home</a></li>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Contact</a></li>
+            <li><a href=#>Blog</a>
+              <ul class="hover-list">
+                <li><a href="#">Part 1</a></li>
+                <li><a href="#">Part 2</a></li>
+                <li><a href="#">Part 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <footer>
+      <p style="text-align: center;">Go to <a href=".logo">TOP</a></p>
+      <ul>
+        <li style="padding-left: 51rem;
+"><a href="https://codepen.io/ARON-JOHN-SALEN/fullpage/azZBNgE" target="output">Part 1</a></li>
+        <li><a href="https://codepen.io/ARON-JOHN-SALEN/full/XJKVONj" target="output">Part 2</a></li>
+        <li><a href="https://codepen.io/ARON-JOHN-SALEN/full/XJKVONj" target="output">Part 3</a></li>
+      </ul>
+      <br>
+      <div><p style="text-align: center;">&copy; 2026 | Aron John Salen | Landing Page</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+    
