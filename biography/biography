@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Behind the Screen: My Life in Technology</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f2933;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        section {
+            width: 80%;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1f2933;
+            border-bottom: 2px solid #1f2933;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f2933;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1><strong>Behind the Screen:</strong> <em>A Journey Built by Code and Circuits</em></h1>
+</header>
+
+<section>
+    <h2>Childhood Years</h2>
+    <p style="text-indent:40px;">
+        <sup>1</sup>My childhood was deeply influenced by the world of computers and technology.<sup>2</sup>My father owned a small computer shop, which became my second home.<sup>3</sup>While other children played outside, I spent my time watching computer parts being assembled.<sup>4</sup>I was fascinated by the <b>green motherboards</b> and tiny electronic components.<sup>5</sup>Every day felt like a new lesson inside that shop.<sup>6</sup>I learned early that computers were not just machines but systems that required harmony.<sup>7</sup>My father taught me patience and discipline when handling hardware.<sup>8</sup>I still remember holding a processor carefully, afraid of bending its pins.<sup>9</sup>This moment sparked my curiosity about how technology worked.<sup>10</sup>I began asking questions about RAM, hard drives, and power supplies.<sup>11</sup>Watching was no longer enough for me.<sup>12</sup>I wanted to participate and build something myself.<sup>13</sup>My father guided me step by step as I installed components.<sup>14</sup>The sound of a component clicking into place excited me.<sup>15</sup>Each successful build gave me confidence.<sup>16</sup>I learned the importance of compatibility and organization.<sup>17</sup>Cable management taught me discipline and cleanliness.<sup>18</sup>Technology stopped being mysterious and became familiar.<sup>19</sup>I felt proud when friends asked for help fixing their computers.<sup>20</sup>Those childhood experiences shaped my love for technology.
+    </p>
+</section>
+
+<section>
+    <h2>Teenage Years</h2>
+    <p style="text-indent:40px;">
+        <sup>1</sup>As I entered my teenage years, my hobby evolved into a serious skill.<sup>2</sup>In high school, my teachers noticed my strong hardware knowledge.<sup>3</sup>I was chosen to represent my school in a PC assembly competition.<sup>4</sup>The pressure was intense, but I trusted my experience.<sup>5</sup>I practiced assembling computers repeatedly at home.<sup>6</sup>Speed and accuracy became my focus.<sup>7</sup>On competition day, I relied on muscle memory.<sup>8</sup>My hands moved confidently, just like my father taught me.<sup>9</sup>I placed second place, which filled me with pride.<sup>10</sup>That achievement motivated me to aim higher.<sup>11</sup>In senior high school, I joined a robotics project using Arduino.<sup>12</sup>I worked on motors, sensors, and wiring.<sup>13</sup>I realized hardware needed software to function properly.<sup>14</sup>This realization pushed me to learn programming.<sup>15</sup>I enjoyed writing logic that controlled machines.<sup>16</sup>Our robot project won Best Thesis Group Project.<sup>17</sup>This proved my ability in both hardware and coding.<sup>18</sup>I competed against other skilled students from different schools.<sup>19</sup>These experiences broadened my perspective on technology.<sup>20</sup>My teenage years connected my past to my future.
+    </p>
+</section>
+
+<section>
+    <h2>College Years</h2>
+    <p style="text-indent:40px;">
+        <sup>1</sup>Entering college forced me to make an important decision.<sup>2</sup>Many expected me to take <strong>BSIT</strong> because of my hardware skills.<sup>3</sup>Instead, I chose <em>Bachelor of Science in Computer Science</em>.<sup>4</sup>I wanted to understand how computers think and process data.<sup>5</sup>Building hardware alone was no longer enough for me.<sup>6</sup>Computer science challenged my problem-solving abilities.<sup>7</sup>I learned programming languages and algorithms.<sup>8</sup>Abstract thinking became part of my daily routine.<sup>9</sup>My hardware background gave me an advantage.<sup>10</sup>I understood how software interacts with physical machines.<sup>11</sup>This dual skill set strengthened my confidence.<sup>12</sup>I continued to fix computers while learning to code.<sup>13</sup>Debugging programs felt similar to troubleshooting hardware.<sup>14</sup>I realized my past experiences still mattered.<sup>15</sup>I consider hardware knowledge a valuable asset.<sup>16</sup>My goal is to work in a leading tech company.<sup>17</sup>I also dream of building my own technology business.<sup>18</sup>College helped me discover my true potential.<sup>19</sup>I now see technology as both art and science.<sup>20</sup>This journey excites me as I move toward the future.
+    </p>
+</section>
+
+<footer>
+    <p><small>&copy; 2025 | Aron John Salen</small></p>
+</footer>
+
+</body>
+</html>
