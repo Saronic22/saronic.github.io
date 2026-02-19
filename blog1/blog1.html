@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>saronic: Beyond the Screen</title>
+    <title>Beyond the Screen | saronic</title>
     <link rel="icon" href="https://t3.ftcdn.net/jpg/03/81/30/16/360_F_381301638_mo8XtnvD4VtKWjNITYhwL3ITRxF4ldaO.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,78 +15,110 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../biography/biography.html" target="_blank">About</a></li>
-                    <li><a href="products.html" target="_blank">Work</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="blog.html" class="active" target="_blank">Blog</a></li>
-                    <li><a href="../photogallery/photogallery.html" target="_blank">Gallery</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">About &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../biography/biography.html" target="_blank">Biography</a>
+                            <a href="../biography/childhood.html" target="_blank">Childhood</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn active">Blog &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#" class="active">Part 1</a>
+                            <a href="../blog2/blog2.html" target="_blank">Part 2</a>
+                            <a href="../blog3/blog3.html" target="_blank">Part 3</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="../photogallery/photogallery.html" class="dropbtn">Gallery &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../photogallery/photogallery.html">Gallery</a>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="../mediapage/mediapage.html" class="dropbtn">Media &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../mediapage/mediapage.html#beats">My Beats</a>
+                            <a href="../mediapage/mediapage.html#movies">My Film Movies</a>
+                            <a href="../mediapage/mediapage.html#tvshows">My Film TV Shows</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
-        </div>
-        
-        <h1 class="title">Beyond the Screen
-            <em>The Digital Lifelines I Can’t Live Without</em>
-        </h1>
     </header>
 
-    <div class="container">
-        <img src="screen.jpg" alt="Blog Header Image" style="width:100%; height:auto; border-radius: 8px; margin-bottom: 20px;"> 
-
-        <section>
-            <h2>Introduction</h2>
-            <p>
-                Ever since I started my journey in tech, my laptop has felt less like a gadget and more like an extension of my brain. There’s a common misconception na basta CS ka, "magaling ka lang sa computer," but the truth is, we are only as good as the tools we master. Looking back at my daily workflow, there are a few specific platforms that have saved me from total burnout and technical chaos.
-            </p>
-        </section>
-
-        <section>
-            <h2>The Essential Toolkit</h2>
-            <p>
-                Collaboration and organization are the backbones of any CS project. To stay afloat, I've integrated these specific platforms into my daily "operating system."
-            </p>
-
-            <div class="concept-box">
-                <h3>My Digital Headquarters:</h3>
-                <ul>
-                    <li><strong>Google Workspace:</strong> My all-in-one office. Real-time collaboration in Docs and Sheets prevents the "Final_Version_v2" email nightmare.</li>
-                    <li><strong>Canva:</strong> My creative escape. It translates "tech-speak" into visual UI mockups and system architectures that everyone can understand.</li>
-                    <li><strong>Virtual Machines (VMs):</strong> The sandbox. This is where I fail safely—testing Linux environments or risky scripts without breaking my main machine.</li>
-                </ul>
+    <main>
+        <div class="blog-container">
+            <h1 class="blog-title">Beyond the Screen</h1>
+            <p class="blog-subtitle">The Digital Lifelines I Can’t Live Without</p>
+            
+            <div class="blog-header-img">
+                <img src="screen.jpg" alt="Digital Workflow">
             </div>
-        </section>
 
-        <section>
-            <h2>The "Sandbox" Philosophy</h2>
-            <p>
-                Virtual Machines aren't just technical tools; they represent a mindset. As someone who loves to tinker, VMs provide the freedom to break things completely and just hit "delete" without any stress. It gives me the freedom to fail and learn, which I think is the most important part of being in CS.
-            </p>
-        </section>
+            <section id="blog-content">
+                <h2>Introduction</h2>
+                <p>
+                    Ever since I started my journey in tech, my laptop has felt less like a gadget and more like an extension of my brain. There’s a common misconception na basta CS ka, "magaling ka lang sa computer," but the truth is, we are only as good as the tools we master. Looking back at my daily workflow, there are a few specific platforms that have saved me from total burnout and technical chaos.
+                </p>
 
-        <section>
-            <h2>Reflection: My Personal Takeaway</h2>
-            <p>
-                Realizing how much I depend on these tools made me reflect on how CS isn't just about hardware; it's about the ecosystem we build for ourselves. These tools don't just make me faster—they make me more creative and less afraid to experiment. 
-            </p>
-            <p>
-                <strong>My advice:</strong> find your own "digital toolkit" early on. Don't just use a tool because it's popular; use it because it makes your life easier and your work better.
-            </p>
-        </section>
-    </div>
+                <h2>The Essential Toolkit</h2>
+                <p>
+                    Collaboration and organization are the backbones of any CS project. To stay afloat, I've integrated these specific platforms into my daily "operating system."
+                </p>
+
+                <div class="concept-box">
+                    <h3>My Digital Headquarters:</h3>
+                    <ul>
+                        <li><strong>Google Workspace:</strong> My all-in-one office. Real-time collaboration in Docs and Sheets prevents the "Final_Version_v2" email nightmare.</li>
+                        <li><strong>Canva:</strong> My creative escape. It translates "tech-speak" into visual UI mockups and system architectures that everyone can understand.</li>
+                        <li><strong>Virtual Machines (VMs):</strong> The sandbox. This is where I fail safely—testing Linux environments or risky scripts without breaking my main machine.</li>
+                    </ul>
+                </div>
+
+                <h2>The "Sandbox" Philosophy</h2>
+                <p>
+                    Virtual Machines aren't just technical tools; they represent a mindset. As someone who loves to tinker, VMs provide the freedom to break things completely and just hit "delete" without any stress. It gives me the freedom to fail and learn, which I think is the most important part of being in CS.
+                </p>
+
+                <h2>Reflection: My Personal Takeaway</h2>
+                <p>
+                    Realizing how much I depend on these tools made me reflect on how CS isn't just about hardware; it's about the ecosystem we build for ourselves. These tools don't just make me faster—they make me more creative and less afraid to experiment. 
+                </p>
+                <p>
+                    <strong>My advice:</strong> find your own "digital toolkit" early on. Don't just use a tool because it's popular; use it because it makes your life easier and your work better.
+                </p>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <div class="footer-top">
             <p><a href="#">BACK TO TOP</a></p>
         </div>
-        
         <ul class="footer-links">
             <li class="footer-label">Blog</li>
-            <li><a href="../blog1/blog1.html" target="_blank">Part 1</a></li>
+            <li><a href="#">Part 1</a></li>
             <li><a href="../blog2/blog2.html" target="_blank">Part 2</a></li>
             <li><a href="../blog3/blog3.html" target="_blank">Part 3</a></li>
         </ul>
+        <ul class="footer-links">
+            <li class="footer-label">Navigation</li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="blog1/blog1.html">Blog</a></li>
+            <li><a href="photogallery/photogallery.html">Gallery</a></li>
+            <li><a href="mediapage/mediapage.html">Media</a></li>
+        </ul>
 
-        <p class="copyright">&copy; 2026 | Aron John Salen | BLOG STORIES PAGES</p>
+        <div class="copyright">
+            <p>&copy; 2026 | Aron John Salen | Blog Stories Pages</p>
+        </div>
     </footer>
-    </body>
+
+</body>
 </html>

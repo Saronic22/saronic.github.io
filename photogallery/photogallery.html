@@ -3,21 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saronic | Photo Gallery</title>
+    <title>Photo Gallery | saronic</title>
     <link rel="icon" href="https://t3.ftcdn.net/jpg/03/81/30/16/360_F_381301638_mo8XtnvD4VtKWjNITYhwL3ITRxF4ldaO.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="top"> <header>
+<body id="top">
+
+    <header>
         <div class="nav-container">
             <div class="logo"><a href="../index.html">saronic</a></div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="../index.html" target="_blank">Home</a></li>
-                    <li><a href="../biography/biography.html" target="_blank">About</a></li>
-                    <li><a href="products.html" target="_blank">Work</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
-                    <li><a href="blog.html" target="_blank">Blog</a></li>
-                    <li><a href="photogallery.html" class="active">Gallery</a></li>
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">About &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../biography/biography.html" target="_blank">Biography</a>
+                            <a href="../biography/childhood.html" target="_blank">Childhood</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Blog &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../blog1/blog1.html" target="_blank">Part 1</a>
+                            <a href="../blog2/blog2.html" target="_blank">Part 2</a>
+                            <a href="../blog3/blog3.html" target="_blank">Part 3</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn active">Gallery &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="photogallery.html">Gallery</a>
+                        </div>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="../mediapage/mediapage.html" class="dropbtn">Media &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="../mediapage/mediapage.html#beats">My Beats</a>
+                            <a href="../mediapage/mediapage.html#movies">My Film Movies</a>
+                            <a href="../mediapage/mediapage.html#tvshows">My Film TV Shows</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -25,7 +55,7 @@
 
     <main>
         <div class="gallery-container">
-            <h1>Photo Dump</h1>
+            <h3>Photo Dump</h3>
             <p class="gallery-intro">A collection of snapshots from development, setups, and life.</p>
 
             <section class="gallery-category">
@@ -96,8 +126,8 @@
                     </div>
                     <div class="photo-item">
                         <a href="picture/self.png" target="_blank">
-                                <img src="picture/self.png" alt="Early Days">
-                                <div class="overlay">View Fullsize</div>
+                            <img src="picture/self.png" alt="Early Days">
+                            <div class="overlay">View Fullsize</div>
                         </a>
                     </div>
                 </div>
@@ -107,13 +137,14 @@
 
     <footer>
         <div class="footer-top">
-            <p><a href="#">BACK TO TOP</a></p>
+            <p><a href="#top">BACK TO TOP</a></p>
         </div>
         <ul class="footer-links">
-            <li class="footer-label">Blog</li>
-            <li><a href="../blog1/blog1.html" target="_blank">Part 1</a></li>
-            <li><a href="../blog2/blog2.html" target="_blank">Part 2</a></li>
-            <li><a href="../blog3/blog3.html" target="_blank">Part 3</a></li>
+            <li class="footer-label">Navigation</li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="blog1/blog1.html">Blog</a></li>
+            <li><a href="photogallery/photogallery.html">Gallery</a></li>
+            <li><a href="mediapage/mediapage.html">Media</a></li>
         </ul>
 
         <div class="copyright">
