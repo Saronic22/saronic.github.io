@@ -37,15 +37,6 @@ a:hover {
 }
 
 /* --- 2. Header & Navigation --- */
-.profile-pic {
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-    
-    display: block;
-    margin: 0 auto 1rem auto;
-    border-radius: 5px;
-}
 header {
     background-color: #000;
     position: sticky;
@@ -398,4 +389,104 @@ footer {
     .footer-links {
         text-align: center;
     }
+}
+/* --- 11. Image Map Integration --- */
+.map-container {
+    margin-top: 30px;
+    background-color: #121212; /* Matches your page background */
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    overflow-x: auto; /* Allows scrolling on mobile so coords don't break */
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.styled-map-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    max-width: none; /* Crucial: Stops the image from shrinking and breaking the map coordinates */
+}
+/* --- 12. Dream Places & Bucket List Styles --- */
+
+/* Destination Image Cards */
+.destination-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--accent);
+}
+
+.destination-card .card-content {
+    text-align: left;
+}
+
+.destination-card h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
+
+/* Bucket List Styling */
+.bucket-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.bucket-list li {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.bucket-list li:hover {
+    transform: translateX(10px);
+    border-color: var(--accent);
+}
+
+/* Custom Checkbox Design */
+.bucket-list .checkbox {
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid var(--accent);
+    border-radius: 4px;
+    margin-top: 2px;
+    position: relative;
+}
+
+/* Adds a checkmark on hover just for fun */
+.bucket-list li:hover .checkbox::after {
+    content: '✔';
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    color: var(--accent);
+    font-size: 16px;
+}
+
+.bucket-list strong {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bucket-list p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
 }

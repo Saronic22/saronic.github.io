@@ -1,24 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Mapping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map & Goals | saronic</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/03/81/30/16/360_F_381301638_mo8XtnvD4VtKWjNITYhwL3ITRxF4ldaO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h2>Image Map</h2>
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="../index.html">saronic</a></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../biography/biography.html" class="dropbtn" target="_blank">About ▾</a>
+                        <div class="dropdown-content">
+                            <a href="../biography/biography.html" target="_blank">About Me</a>
+                            <a href="../biography/childhood.html" target="_blank">Childhood</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../blog1/blog1.html" class="dropbtn" target="_blank">Blog ▾</a>
+                        <div class="dropdown-content">
+                            <a href="../blog1/blog1.html" target="_blank">My Journey</a>
+                            <a href="../blog2/blog2.html" target="_blank">Order in Chaos</a>
+                            <a href="../blog3/blog3.html" target="_blank">Beyond the Screen</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../photogallery/photogallery.html" class="dropbtn" target="_blank">Gallery ▾</a>
+                        <div class="dropdown-content">
+                            <a href="../photogallery/photogallery.html" target="_blank">Photo Dump</a>
+                            <a href="imagemap.html" class="active">World Map</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../mediapage/mediapage.html" class="dropbtn" target="_blank">Media ▾</a>
+                        <div class="dropdown-content">
+                            <a href="../mediapage/beats.html" target="_blank">Beats</a>
+                            <a href="../mediapage/movies.html" target="_blank">Movies</a>
+                            <a href="../mediapage/tvshows.html" target="_blank">TV Shows</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<img src="imagemap.png" usemap="#image-map">
+    <main style="display: flex; flex-direction: column; align-items: center; min-height: 60vh; padding: 40px 20px;">
+        
+        <section class="content-box" style="width: 100%; max-width: 1100px; margin-bottom: 40px;">
+            <h3>Dream Places to Visit</h3>
+            <p>Explore my top five dream destinations. Click the highlighted areas on the map below, or scroll down to see why these places inspire me.</p>
+            
+            <div class="map-container">
+                <img src="imagemap.png" usemap="#image-map" alt="Interactive Landmark Map" class="styled-map-img">
+                <map name="image-map">
+                    <area target="_blank" alt="USA - Statue of Liberty" title="USA - Statue of Liberty" href="https://en.wikipedia.org/wiki/Statue_of_Liberty" coords="0,440,182,984" shape="rect">
+                    <area target="_blank" alt="Greece - Parthenon" title="Greece - Parthenon" href="https://en.wikipedia.org/wiki/Parthenon" coords="241,1168,258" shape="circle">
+                    <area target="_blank" alt="Italy - Pisa" title="Italy - Pisa" href="https://wikitravel.org/en/Pisa" coords="151,81,238,78,229,431,108,425" shape="poly">
+                    <area target="_blank" alt="France - Eiffel Tower" title="France - Eiffel Tower" href="https://en.wikipedia.org/wiki/Eiffel_Tower" coords="291,13,436,9,481,325,271,329" shape="poly">
+                    <area target="_blank" alt="Rome - Colosseum" title="Rome - Colosseum" href="https://en.wikipedia.org/wiki/Colosseum" coords="186,506,230,434,318,346,414,434,463,590,540,601,545,893,193,891,189,699" shape="poly">
+                    <area target="_blank" alt="London - Big Ben" title="London - Big Ben" href="https://en.wikipedia.org/wiki/Big_Ben" coords="735,124,723,94,715,39,704,69,667,168,657,213,621,291,609,503,603,659,734,655" shape="poly">
+                </map>
+            </div>
 
-<map name="image-map">
-    <area target="myNewTab" alt="USA - Statue of Liberty" title="USA - Statue of Liberty" href="https://en.wikipedia.org/wiki/Statue_of_Liberty" coords="0,440,182,984" shape="rect">
-    <area target="myNewTab" alt="Greece - Parthenon" title="Greece - Parthenon" href="https://en.wikipedia.org/wiki/Parthenon" coords="241,1168,258" shape="circle">
-    <area target="myNewTab" alt="Italy - Pisa" title="Italy - Pisa" href="https://wikitravel.org/en/Pisa" coords="151,81,238,78,229,431,108,425" shape="poly">
-    <area target="myNewTab" alt="UK - Eiffel Tower" title="UK - Eiffel Tower" href="https://en.wikipedia.org/wiki/Eiffel_Tower" coords="291,13,436,9,481,325,271,329" shape="poly">
-    <area target="myNewTab" alt="Rome - Colosseum" title="Rome - Colosseum" href="https://en.wikipedia.org/wiki/Colosseum" coords="186,506,230,434,318,346,414,434,463,590,540,601,545,893,193,891,189,699" shape="poly">
-</map>
+            <div class="grid-container" style="margin-top: 40px;">
+                
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Statue_of_Liberty_7.jpg/800px-Statue_of_Liberty_7.jpg" alt="Statue of Liberty">
+                    <div class="card-content">
+                        <span class="genre-tag">United States</span>
+                        <h3>Statue of Liberty</h3>
+                        <p class="synopsis">There is just something surreal about seeing the New York skyline in person. I'd love to take the ferry out there, see the sheer scale of the statue, and just feel the energy of a city that never sleeps.</p>
+                    </div>
+                </div>
+
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/800px-The_Parthenon_in_Athens.jpg" alt="Parthenon, Greece">
+                    <div class="card-content">
+                        <span class="genre-tag">Greece</span>
+                        <h3>The Parthenon</h3>
+                        <p class="synopsis">I've seen so many pictures of ancient Greek ruins, but standing right in front of them must be a totally different experience. I just want to walk around and take in a place that has been standing for thousands of years.</p>
+                    </div>
+                </div>
+
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Leaning_Tower_of_Pisa_SB.jpeg/800px-The_Leaning_Tower_of_Pisa_SB.jpeg" alt="Leaning Tower of Pisa">
+                    <div class="card-content">
+                        <span class="genre-tag">Italy</span>
+                        <h3>Tower of Pisa</h3>
+                        <p class="synopsis">It is one of those places you just have to see to believe. Beyond taking the classic, funny tourist photo, I genuinely want to see how this beautiful, flawed building has managed to stay standing for so long.</p>
+                    </div>
+                </div>
+
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/800px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" alt="Eiffel Tower, Paris">
+                    <div class="card-content">
+                        <span class="genre-tag">France</span>
+                        <h3>Eiffel Tower</h3>
+                        <p class="synopsis">It is a classic for a reason. I would love to grab some food, sit on the grass right beneath it, and just watch it light up at night. It feels like the ultimate travel milestone.</p>
+                    </div>
+                </div>
+
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Colosseum_exterior%2C_inner_and_outer_wall_AvL.jpg" alt="Colosseum, Rome">
+                    <div class="card-content">
+                        <span class="genre-tag">Rome</span>
+                        <h3>The Colosseum</h3>
+                        <p class="synopsis">You see it in movies and games all the time, but walking through the actual arches where gladiators used to fight sounds incredible. I want to feel the massive scale of this ancient arena for myself.</p>
+                    </div>
+                </div>
+
+                <div class="card destination-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg/800px-Clock_Tower_-_Palace_of_Westminster%2C_London_-_May_2007.jpg" alt="Big Ben, London">
+                    <div class="card-content">
+                        <span class="genre-tag">United Kingdom</span>
+                        <h3>Big Ben</h3>
+                        <p class="synopsis">There is something so iconic about the sound of Big Ben chiming in the middle of London. I'd love to walk across the bridge, hear the bells, and soak in that classic, cozy British weather.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-box" style="width: 100%; max-width: 1100px;">
+            <h3>My Bucket List</h3>
+            <p>A collection of professional and personal milestones I am working toward accomplishing in my lifetime.</p>
+            
+            <ul class="bucket-list">
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Ship a Fully Realized Game Title</strong>
+                        <p>finishing my projects Reckless, I want to release a working game that players can truly enjoy.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Become a Professional Game Developer</strong>
+                        <p>Transition from a BSCS student learning Discrete Structures to a full-time game developer within the next five years.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Build the Ultimate Custom PC Rig</strong>
+                        <p>Upgrade my current Ryzen 5 and RTX 3070 setup into an absolute powerhouse, perhaps even tackling a custom hardline water-cooling loop.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Create an Advanced Robotics Successor</strong>
+                        <p>Take the hardware coding skills I used to win Best Thesis Group Project with my high school Arduino robot, and build something even more complex.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Travel for Creative Inspiration</strong>
+                        <p>Visit the destinations mapped above to gather real-world architectural references and textures to use in my 3D environments.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Master C++ and Unreal Engine</strong>
+                        <p>Take my foundational knowledge in C++ to the next level by building high-fidelity, complex 3D games in an industry-standard engine.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Build a Custom Arcade Cabinet</strong>
+                        <p>Combine my love for PC hardware assembly and game dev by building a physical, retro-style arcade machine from scratch to play my own games.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Compete in a Global Game Jam</strong>
+                        <p>Test my software engineering limits by prototyping, coding, and designing a complete, playable game from scratch within a tight 48-hour time limit.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Officially Launch the 'Saronic' Domain</strong>
+                        <p>Deploy this very HTML/CSS web portfolio to a live server, creating a permanent home on the web to showcase my evolving code, blogs, and media.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="checkbox"></div>
+                    <div>
+                        <strong>Earn my BSCS Degree</strong>
+                        <p>Successfully navigate the complexities of data structures, algorithms, and software engineering to proudly walk across the stage and graduate.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top"><a href="#">BACK TO TOP</a></div>
+        
+        <div class="footer-columns">
+            <ul class="footer-links">
+                <li class="footer-label">Navigation</li>
+                <li><a href="../biography/biography.html" target="_blank">About</a></li>
+                <li><a href="../photogallery/photogallery.html" target="_blank">Gallery</a></li>
+                <li><a href="#">Interactive Map</a></li>
+                <li><a href="../mediapage/mediapage.html" target="_blank">Media</a></li>
+            </ul>
+
+            <ul class="footer-links">
+                <li class="footer-label">Blog Series</li>
+                <li><a href="../blog1/blog1.html" target="_blank">Part 1: Beyond the Screen</a></li>
+                <li><a href="../blog2/blog2.html" target="_blank">Part 2: Order in the Chaos</a></li>
+                <li><a href="../blog3/blog3.html" target="_blank">Part 3: My Journey</a></li>
+            </ul>
+
+            <ul class="footer-links">
+                <li class="footer-label">Media Page</li>
+                <li><a href="../mediapage/beats.html" target="_blank">Beats</a></li>
+                <li><a href="../mediapage/movies.html" target="_blank">Movies</a></li>
+                <li><a href="../mediapage/tvshows.html" target="_blank">TV Shows</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 | Aron John Salen | Image Map</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
-
-

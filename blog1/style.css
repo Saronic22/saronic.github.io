@@ -1,4 +1,3 @@
-/* --- Base Styles & Variables --- */
 html {
     scroll-behavior: smooth;
 }
@@ -32,7 +31,6 @@ a:hover {
     color: var(--accent);
 }
 
-/* --- Header & Navigation --- */
 header {
     background-color: #000;
     position: sticky;
@@ -78,10 +76,9 @@ header {
     padding-bottom: 5px;
 }
 
-/* --- Dropdown Menus --- */
 .dropdown {
     position: relative;
-    padding-bottom: 10px; /* Expands hover area slightly downwards */
+    padding-bottom: 10px;
     margin-bottom: -10px;
 }
 
@@ -123,13 +120,12 @@ header {
 }
 .dropdown {
     position: relative;
-    padding-bottom: 15px; /* Creates an invisible bridge to the menu */
-    margin-bottom: -15px; /* Keeps your header layout from stretching */
+    padding-bottom: 15px;
+    margin-bottom: -15px;
 }
 .dropdown:hover .dropbtn {
     color: var(--accent);
 }
-/* --- Main Content --- */
 main {
     flex: 1;
     max-width: 900px;
@@ -167,7 +163,6 @@ main {
     font-weight: bold;
     border-bottom: 1px dotted var(--accent);
 }
-/* --- Blog Specific Styles --- */
 
 .blog-container {
     background-color: var(--card-bg);
@@ -217,7 +212,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* Updated Closing Thought style */
 .closing-thought {
     font-weight: bold;
     font-style: italic;
@@ -230,7 +224,6 @@ main {
     text-align: center;
 }
 
-/* Adjustments for mobile responsiveness */
 @media (max-width: 768px) {
     .blog-container {
         padding: 25px;
@@ -240,13 +233,12 @@ main {
         font-size: 1.8rem;
     }
 }
-/* --- Footer --- */
 footer {
     background-color: #000;
     padding: 40px 20px;
     text-align: center;
     border-top: 1px solid #333;
-    margin-top: auto; /* Keeps footer at bottom of short pages */
+    margin-top: auto;
 }
 
 .footer-top a {
@@ -258,21 +250,19 @@ footer {
     display: inline-block;
 }
 
-/* Container for the columns */
 .footer-columns {
     display: flex;
     justify-content: center;
-    gap: 80px; /* Space between Nav and Blog columns */
+    gap: 80px;
     margin: 20px 0 40px 0;
     flex-wrap: wrap;
 }
 
-/* Style for each UL column */
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left; /* Aligns text within the column */
+    text-align: left;
 }
 
 .footer-label {
@@ -281,7 +271,7 @@ footer {
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-bottom: 15px;
-    display: block; /* Ensures label is on its own line */
+    display: block;
 }
 
 .footer-links li {
@@ -306,7 +296,6 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Mobile: Stack columns vertically */
 @media (max-width: 600px) {
     .footer-columns {
         flex-direction: column;
