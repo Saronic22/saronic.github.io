@@ -1,7 +1,7 @@
-/* --- Base Styles & Variables --- */
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     --bg-color: #121212;
     --card-bg: #1e1e1e;
@@ -32,7 +32,6 @@ a:hover {
     color: var(--accent);
 }
 
-/* --- Header & Navigation --- */
 header {
     background-color: #000;
     position: sticky;
@@ -78,11 +77,10 @@ header {
     padding-bottom: 5px;
 }
 
-/* --- Dropdown Menus --- */
 .dropdown {
     position: relative;
-    padding-bottom: 10px; /* Expands hover area slightly downwards */
-    margin-bottom: -10px;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
 }
 
 .dropdown-content {
@@ -121,15 +119,11 @@ header {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.dropdown {
-    position: relative;
-    padding-bottom: 15px; /* Creates an invisible bridge to the menu */
-    margin-bottom: -15px; /* Keeps your header layout from stretching */
-}
+
 .dropdown:hover .dropbtn {
     color: var(--accent);
 }
-/* --- Main Content --- */
+
 main {
     flex: 1;
     max-width: 900px;
@@ -168,13 +162,12 @@ main {
     border-bottom: 1px dotted var(--accent);
 }
 
-/* --- Footer --- */
 footer {
     background-color: #000;
     padding: 40px 20px;
     text-align: center;
     border-top: 1px solid #333;
-    margin-top: auto; /* Keeps footer at bottom of short pages */
+    margin-top: auto;
 }
 
 .footer-top a {
@@ -186,21 +179,19 @@ footer {
     display: inline-block;
 }
 
-/* Container for the columns */
 .footer-columns {
     display: flex;
     justify-content: center;
-    gap: 80px; /* Space between Nav and Blog columns */
+    gap: 80px;
     margin: 20px 0 40px 0;
     flex-wrap: wrap;
 }
 
-/* Style for each UL column */
 .footer-links {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left; /* Aligns text within the column */
+    text-align: left;
 }
 
 .footer-label {
@@ -209,7 +200,7 @@ footer {
     text-transform: uppercase;
     font-size: 0.9rem;
     margin-bottom: 15px;
-    display: block; /* Ensures label is on its own line */
+    display: block;
 }
 
 .footer-links li {
@@ -234,7 +225,6 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Mobile: Stack columns vertically */
 @media (max-width: 600px) {
     .footer-columns {
         flex-direction: column;
@@ -245,7 +235,6 @@ footer {
         text-align: center;
     }
 }
-/* --- Media Gallery specific styles --- */
 
 section {
     margin-bottom: 50px;
@@ -262,14 +251,12 @@ section h2 {
     text-align: center;
 }
 
-/* Responsive Grid layout for cards */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-/* Card Styling mimicking your .content-box */
 .card {
     background-color: var(--card-bg);
     border-radius: 10px;
@@ -283,22 +270,14 @@ section h2 {
     box-shadow: 0 8px 25px rgba(0, 173, 181, 0.2);
 }
 
-/* Responsive 16:9 Aspect Ratio Container for iframes and images */
 .media-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; 
     background-color: #000;
 }
-.media-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    object-fit: cover;
-}
+
+.media-container video,
 .media-container img,
 .media-container iframe {
     position: absolute;
@@ -307,10 +286,9 @@ section h2 {
     width: 100%;
     height: 100%;
     border: none;
-    object-fit: cover;
+    object-fit: contain; 
 }
 
-/* Inside the card */
 .card-content {
     padding: 25px;
     text-align: left;
@@ -320,7 +298,7 @@ section h2 {
     margin: 10px 0;
     font-size: 1.5rem;
     color: var(--text-main);
-    border-bottom: none; /* overrides base h3 if inherited */
+    border-bottom: none; 
     text-transform: none; 
     letter-spacing: normal;
 }
@@ -354,4 +332,3 @@ section h2 {
     text-align: justify;
     margin-bottom: 0;
 }
-
